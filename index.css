@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.upper .div-1,
+.upper .div-2 {
+    text-align: center;
+}
+
+.div-1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.div-2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #a8ff78;
+    border-bottom: 3px solid #a8ff78;
+    padding-bottom: 5px;
+}
+
+.middle {
+    width: 100%;
+    position: relative;
+}
+
+.middle input {
+    width: 100%;
+    height: 50px;
+    padding: 0 50px 0 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: width 0.4s ease;
+}
+
+.middle input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #a7ff78;
+}
+
+.middle img {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.middle img:hover {
+    transform:scale(1.1);
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+}
+
+.lower button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 240px;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #00c853;
+    color: white;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.lower button:hover {
+    background-color: #00e676;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.lower button img {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .div-1,
+    .div-2 {
+        font-size: 1.8rem;
+    }
+
+    .lower button {
+        width: 90%;
+    }
+}
